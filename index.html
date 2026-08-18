@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武汉云之月电子商务有限公司 - 亚马逊广告API开发者</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 780px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            padding: 48px 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1a73e8;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #202124;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 18px;
+            color: #5f6368;
+            margin-bottom: 32px;
+            border-bottom: 2px solid #f1f3f4;
+            padding-bottom: 24px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 16px 24px;
+            margin-bottom: 32px;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #3c4043;
+        }
+
+        .value {
+            color: #202124;
+        }
+
+        .section {
+            margin-top: 28px;
+            padding-top: 28px;
+            border-top: 2px solid #f1f3f4;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #202124;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            color: #3c4043;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .section ul {
+            color: #3c4043;
+            line-height: 1.8;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid #e8eaed;
+            font-size: 14px;
+            color: #9aa0a6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 28px 20px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            .label {
+                margin-top: 12px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- 身份标识 -->
+        <div class="badge">📊 亚马逊广告 API 开发者</div>
+
+        <!-- 公司名称 -->
+        <h1>武汉云之月电子商务有限公司</h1>
+        <div class="subhead">用于广告数据自动化分析与运营优化</div>
+
+        <!-- 核心信息 -->
+        <div class="info-grid">
+            <span class="label">公司全称</span>
+            <span class="value">武汉云之月电子商务有限公司</span>
+
+            <span class="label">业务类型</span>
+            <span class="value">亚马逊第三方卖家 / 品牌所有者</span>
+
+            <span class="label">开发者邮箱</span>
+            <span class="value">whyzydzsw@163.com</span>
+
+            <span class="label">国家/地区</span>
+            <span class="value">中国</span>
+        </div>
+
+        <!-- 业务说明 -->
+        <div class="section">
+            <h2>📌 业务说明</h2>
+            <p>
+                我们是一家专注于亚马逊全球开店的品牌企业，通过亚马逊广告 API 实现广告数据的自动化获取与分析，
+                以数据驱动的方式优化广告投放策略，提升投资回报率。
+            </p>
+        </div>
+
+        <!-- 具体用途 -->
+        <div class="section">
+            <h2>⚙️ API 具体用途</h2>
+            <ul>
+                <li>自动拉取 Sponsored Products 广告活动的曝光、点击、花费、销售额等核心指标</li>
+                <li>将广告数据导入本地 BI 系统，生成自定义分析看板</li>
+                <li>基于实时数据，辅助人工进行关键词优化和竞价调整</li>
+                <li>自动化生成每日/每周广告效果报告</li>
+            </ul>
+        </div>
+
+        <!-- 数据隐私 -->
+        <div class="section">
+            <h2>🔒 数据隐私与保护</h2>
+            <p>
+                我们严格遵守亚马逊数据保护政策，API 获取的广告数据仅用于内部运营优化，
+                绝不与任何第三方共享，数据存储符合行业安全标准。
+            </p>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <span>© <span id="year"></span> 武汉云之月电子商务有限公司</span>
+            <span>联系邮箱：whyzydzsw@163.com</span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
